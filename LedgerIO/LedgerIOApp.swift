@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct LedgerIOApp: App {
@@ -13,5 +14,6 @@ struct LedgerIOApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [Expense.self])
     }
 }
