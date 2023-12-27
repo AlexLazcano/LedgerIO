@@ -20,6 +20,6 @@ struct LedgerIOApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: [Expense.self, Friend.self])
+        .modelContainer(for: [Expense.self, User.self])
     }
 }

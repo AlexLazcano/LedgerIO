@@ -9,9 +9,11 @@ import Foundation
 import SwiftData
 
 @Model
-class Friend {
+class User {
     @Attribute(.unique) var name: String
     init(name: String) {
         self.name = name
     }
 }
+
+

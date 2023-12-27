@@ -12,7 +12,7 @@ struct FriendsView: View {
 //    @State private var isShowingAddSheet = false
     @Environment(\.modelContext) private var context
     @State private var newFriend :String = ""
-    @Query(sort: \Friend.name) var friends: [Friend]
+    @Query(sort: \User.name) var friends: [User]
     @State private var selectedFriend: String = "None"
     
     
@@ -34,13 +34,22 @@ struct FriendsView: View {
                     ForEach(friends) { friend in
                         Text(friend.name)
                     }
+                    .onDelete(perform: { indexSet in
+                        for index in indexSet {
+                            context.delete(friends[index])
+                        }
+                    })
                     
                 }
                 
                 Section {
                     TextField("Add New", text: $newFriend)
                     Button("Add") {
-                        let friend = Friend(name: newFriend)
+                        if newFriend == "" {
+                            return
+                        }
+                        
+                        let friend = User(name: newFriend)
                         context.insert(friend)
                         newFriend = ""
                     }
@@ -48,7 +57,7 @@ struct FriendsView: View {
                 
                 
             }
-            .navigationTitle("Friends")
+            .navigationTitle("People")
         }
     }
 }
