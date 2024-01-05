@@ -62,6 +62,19 @@ struct FriendsView: View {
     }
 }
 
+@MainActor
+let modelTestUserContainer: ModelContainer = {
+    do {
+        let schema = Schema([User.self, Expense.self])
+        let config = ModelConfiguration(isStoredInMemoryOnly: false)
+        let container = try ModelContainer(for: schema, configurations: config)
+        return container
+    } catch {
+        fatalError("Failed to create container")
+    }
+}()
+
+
 #Preview {
     FriendsView()
 }
