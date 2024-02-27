@@ -4,11 +4,17 @@ Ledger IO is a financial management tool designed to simplify interactions and t
 
 # Features
 
+- **Frontend with SwiftUI:** Ledger IO's frontend is built using SwiftUI, providing a modern and intuitive user interface for seamless navigation and interaction.
 - **Friend Tracking:** Ledger IO offers a friend tracking feature that simplifies financial relationships among users. 
 - **Clear Balance Overviews:** Users can easily see who owes whom within their network, fostering transparency and accountability.
 - **Real-time Updates:** The platform provides real-time updates on financial transactions and balances, ensuring users have the most current information.
 - **Intuitive Filters:** Intuitive filters make navigating connections and transactions straightforward, enhancing user experience.
 - **Efficient Debt Settlement:** Ledger IO streamlines debt settlement processes, making it convenient for users to settle financial obligations within their social circle.
+
+# Backend Repository
+
+The backend codebase for Ledger IO can be found at [Backend Repository](https://github.com/AlexLazcano/LedgerIO-Backend).
+
 
 # Plans for Future
 
