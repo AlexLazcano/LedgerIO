@@ -13,8 +13,8 @@ Ledger IO is a financial management tool designed to simplify interactions and t
 
 # Backend Repository
 
-The backend codebase for Ledger IO can be found at [Backend Repository](https://github.com/AlexLazcano/LedgerIO-Backend).
-The Api codebase for Ledger IO can be found at [Backend Repository](https://github.com/AlexLazcano/LedgerIO-APIs).
+- The backend codebase for Ledger IO can be found at [Backend Repository](https://github.com/AlexLazcano/LedgerIO-Backend).
+- The Api codebase for Ledger IO can be found at [API Repository](https://github.com/AlexLazcano/LedgerIO-APIs).
 
 
 # Plans for Future
